@@ -8,7 +8,8 @@ import {
   polygon,
   sepolia,
 } from "wagmi/chains";
-require("dotenv").config();
+import { config as dotenvConfig } from "dotenv";
+dotenvConfig(); // Load environment variables
 
 const PROJECT_ID = process.env.PROJECT_ID || "default_project_id";
 
